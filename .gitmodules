@@ -1,3 +1,0 @@
-[submodule "images/php/app"]
-	path = images/php/app
-	url = https://github.com/laravel/lumen
