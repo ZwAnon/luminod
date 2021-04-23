@@ -1,7 +1,7 @@
 ## Luminod Setup 
 
-1. `$ git clone https://github.com/tjphippen/luminod` ***serviceName*** `&& cd `***serviceName***
-2. `$ bash create.sh `
+1. `$ git clone https://github.com/tjphippen/luminod && cd luminod`
+2. `$ bash create.sh `***serviceName***
 
 
 ### Startup To-Do:
