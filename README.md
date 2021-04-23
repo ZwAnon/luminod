@@ -1,14 +1,14 @@
 ## Luminod Setup 
 
-1. `$ git clone https://github.com/tjphippen/luminod && cd luminod`
-2. `$ bash create.sh `***serviceName***
+1. `$ git clone https://github.com/tjphippen/luminod && cd luminod && bash create.sh`
+2. Have a beer! :beer:
 
 
 ### Startup To-Do:
-1. bash create ***serviceName*** w/prompts for .env vars(passwords)
-2. Create DB & user w/***serviceName***
-3. Run `composer `update` on re/start
-4. Add/include Vue nginx container (bash writes .env)
+1. bash prompts for .env vars(passwords)
+4. Add/include Vue container (bash writes .env)
+
+---
 
 # Docker + Lumen with Nginx, MySQL, and Memcached
 
