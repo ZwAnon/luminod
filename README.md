@@ -6,7 +6,8 @@
 
 ### Startup To-Do:
 1. bash prompts for .env vars(passwords)
-4. Add/include Vue container (bash writes .env)
+2. generate app Key
+3. Add/include Vue container (bash writes .env)
 
 ---
 
