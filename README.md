@@ -1,11 +1,11 @@
-##Luminod Setup 
+## Luminod Setup 
 
 1. `$ git clone https://github.com/tjphippen/luminod` ***serviceName*** `&& cd `***serviceName***
 2. `$ docker-compose up --build -d`
 3. `$ docker-compose run --rm -w /var/www/html/app php composer install`
 
 
-STARTUP TODO:
+### Startup To-Do:
 1. bash create ***serviceName*** w/prompts for .env vars(passwords)
 2. Create DB & user w/***serviceName***
 3. Run `composer install` or `update` on build/startup
