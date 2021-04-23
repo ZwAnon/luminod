@@ -7,7 +7,7 @@
 ### Startup To-Do:
 1. bash create ***serviceName*** w/prompts for .env vars(passwords)
 2. Create DB & user w/***serviceName***
-3. Run `composer install` or `update` on build/startup
+3. Run `composer `update` on re/start
 4. Add/include Vue nginx container (bash writes .env)
 
 # Docker + Lumen with Nginx, MySQL, and Memcached
