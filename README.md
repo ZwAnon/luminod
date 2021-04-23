@@ -1,14 +1,13 @@
 ## Luminod Setup 
 
 1. `$ git clone https://github.com/tjphippen/luminod` ***serviceName*** `&& cd `***serviceName***
-2. `$ docker-compose up --build -d`
-3. `$ docker-compose run --rm -w /var/www/html/app php composer install`
+2. `$ bash create.sh `
 
 
 ### Startup To-Do:
 1. bash create ***serviceName*** w/prompts for .env vars(passwords)
 2. Create DB & user w/***serviceName***
-3. Run `composer install` or `update` on build/startup
+3. Run `composer `update` on re/start
 4. Add/include Vue nginx container (bash writes .env)
 
 # Docker + Lumen with Nginx, MySQL, and Memcached
