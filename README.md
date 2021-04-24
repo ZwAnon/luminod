@@ -64,6 +64,9 @@ php artisan cache:clear
 3. Add Vue App container
 4. Add SSL Cert
 5. Add `rabbitmq` container
-6. Add API Gateway
+6. Add `bind` container
 
 ---
+
+### Thanks To 
+https://github.com/saada/docker-lumen
