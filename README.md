@@ -3,18 +3,6 @@
 
 ![image](Lumen_splash.png)
 
-### Configuration
-
-There are two configurations using `.env` files. One `.env` file for docker-compose.yaml and another for the php application.
-
-```sh
-# copy both files and make changes to them if needed
-cp .env.docker.example .env
-cp .env.app.example images/php/app/.env
-```
-
-To change configuration values, look in the `docker-compose.yml` file and change the `php` container's environment variables. These directly correlate to the Lumen environment variables.
-
 ## Docker Setup
 
 ### [Docker for Mac](https://docs.docker.com/docker-for-mac/)
@@ -25,8 +13,11 @@ To change configuration values, look in the `docker-compose.yml` file and change
 
 ### Build & Run
 
-1. `$ git clone https://github.com/tjphippen/luminod && cd luminod && bash create.sh`
-2. Have a beer! :beer:
+```bash
+git clone https://github.com/tjphippen/luminod && cd luminod && bash create.sh
+```
+
+`Have a beer!` :beer:
 
 Navigate to [http://localhost:80](http://localhost:80) and you should see something like this
 ![image](Lumen_browser.png)
@@ -39,6 +30,12 @@ Feel free to configure the default port 80 in `docker-compose.yml` to whatever y
 
 ```bash
 docker-compose down
+```
+
+### Start Everything
+
+```bash
+docker-compose up --build -d
 ```
 
 ## Running Artisan commands
