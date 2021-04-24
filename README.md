@@ -1,39 +1,7 @@
-## Luminod Setup 
-
-1. `$ git clone https://github.com/tjphippen/luminod && cd luminod && bash create.sh`
-2. Have a beer! :beer:
-
-
-### Startup To-Do:
-1. bash prompts for .env vars(passwords)
-2. generate app Key
-3. Add/include Vue container (bash writes .env)
-
----
-
-# Docker + Lumen with Nginx, MySQL, and Memcached
+# luminod
+### Docker + Lumen with Nginx, MySQL, and Memcached
 
 ![image](Lumen_splash.png)
-
-## Why?
-
-Setting up an entire Lumen stack can be time consuming. This repo is a quick way to write apps in PHP using Lumen from an any Docker client. It uses docker-compose to setup the application services, databases, cache, etc...
-
-## Clone this repo
-
-```bash
-git clone https://github.com/saada/docker-lumen.git
-cd docker-lumen
-```
-
-## Create Lumen App
-
-now, create the app in the `images/php` directory named `app`
-
-```bash
-cd images/php
-docker run --rm -it -v $(pwd):/app saada/lumen-cli lumen new app
-```
 
 ### Configuration
 
@@ -57,9 +25,8 @@ To change configuration values, look in the `docker-compose.yml` file and change
 
 ### Build & Run
 
-```bash
-docker-compose up --build -d
-```
+1. `$ git clone https://github.com/tjphippen/luminod && cd luminod && bash create.sh`
+2. Have a beer! :beer:
 
 Navigate to [http://localhost:80](http://localhost:80) and you should see something like this
 ![image](Lumen_browser.png)
@@ -87,3 +54,13 @@ php artisan cache:clear
 ## Contribute
 
 Submit a Pull Request!
+
+## Dev To-Do:
+1. bash prompts for .env vars(passwords)
+2. generate app Key
+3. Add Vue App container
+4. Add SSL Cert
+5. Add `rabbitmq` container
+6. Add API Gateway
+
+---
