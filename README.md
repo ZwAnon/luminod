@@ -3,6 +3,8 @@
 
 ![image](Lumen_splash.png)
 
+---
+
 ## Docker Setup
 
 ### [Docker for Mac](https://docs.docker.com/docker-for-mac/)
@@ -10,6 +12,8 @@
 ### [Docker for Windows](https://docs.docker.com/docker-for-windows/)
 
 ### [Docker for Linux](https://docs.docker.com/engine/installation/linux/)
+
+---
 
 ### Build & Run
 
@@ -49,8 +53,10 @@ php artisan cache:clear
 ```
 
 ## Contribute
-
-Submit a Pull Request!
+  - Submit a Pull Request!
+  - Buy me a :beer: 
+    - ETH: `0xe3b5b9db175d5988ac22e47979fdb639686069df` 
+    - Paypal: `paypal@tjphippen.com`
 
 ## Dev To-Do:
 1. bash prompts for .env vars(passwords)
