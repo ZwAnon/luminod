@@ -1,15 +1,27 @@
 #!/bin/sh
 
-service=$1
 wwwdir="/var/www/html"
 
-# sudo apt update -y
+read -p "Service Name: " service
+read -s -p "Database Password: " password
 
+# set docker ENV vars
+dockerEnv=`cat .env.docker.example`
+newDockerEnv=${dockerEnv//lumen/$service}
+env=${newDockerEnv//secret/$password}
+echo "$env" > .env
+echo
+
+# install Lumen (todo: change submodule)
 git submodule add https://github.com/laravel/lumen images/php/app
 git submodule update
 
-cp .env.docker.example .env
-cp .env.app.example images/php/app/.env
+# set Lumen ENV
+lumenEnv=`cat .env.app.example`
+newLumenEnv=${lumenEnv//lumen/$service}
+lenv=${newLumenEnv//secret/$password}
+echo "$lenv" > images/php/app/.env
+echo
 
 docker-compose up --build -d
 
