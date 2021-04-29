@@ -1,10 +1,12 @@
 #!/bin/sh
 
 wwwdir="/var/www/html"
+lumenRepo="https://github.com/laravel/lumen"
 
 read -p "Service Name: " service
 read -s -p "Database Password: " password
-read -e -p "App Repo: " -i "https://github.com/laravel/lumen" repo
+read -p "Application Rep: [default=$lumenRepo] " repo
+: ${repo:=$lumenRepo}
 
 # set docker ENV vars
 dockerEnv=`cat .env.docker.example`
