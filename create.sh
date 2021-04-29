@@ -16,7 +16,7 @@ env=${newDockerEnv//secret/$password}
 echo "$env" > .env
 echo
 
-# install Lumen (todo: change submodule)
+# install Lumen/app
 git submodule add $repo images/php/app
 git submodule update
 
