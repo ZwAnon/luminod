@@ -5,6 +5,7 @@ lumenRepo="https://github.com/laravel/lumen"
 
 read -p "Service Name: " service
 read -s -p "Database Password: " password
+echo
 read -p "Application Rep: [default=$lumenRepo] " repo
 : ${repo:=$lumenRepo}
 
