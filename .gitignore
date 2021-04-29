@@ -1,5 +1,6 @@
 .idea
-#images/php/app
-#.env
 .DS_Store
+.env
+images/php/app
+images/db
 

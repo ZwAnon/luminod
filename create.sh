@@ -4,6 +4,7 @@ wwwdir="/var/www/html"
 
 read -p "Service Name: " service
 read -s -p "Database Password: " password
+read -e -p "App Repo: " -i "https://github.com/laravel/lumen" repo
 
 # set docker ENV vars
 dockerEnv=`cat .env.docker.example`
@@ -13,7 +14,7 @@ echo "$env" > .env
 echo
 
 # install Lumen (todo: change submodule)
-git submodule add https://github.com/laravel/lumen images/php/app
+git submodule add $repo images/php/app
 git submodule update
 
 # set Lumen ENV
