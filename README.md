@@ -18,7 +18,7 @@
 ### Build & Run
 
 ```bash
-git clone https://github.com/tjphippen/luminod && cd luminod && bash create.sh
+git clone https://github.com/ZwAnon/luminod && cd luminod && bash create.sh
 ```
 
 `Have a wine'  🍷
