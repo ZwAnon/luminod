@@ -21,7 +21,7 @@
 git clone https://github.com/tjphippen/luminod && cd luminod && bash create.sh
 ```
 
-`Have a beer!` :beer:
+`Have a wine'  🍷
 
 Navigate to [http://localhost:80](http://localhost:80) and you should see something like this
 ![image](Lumen_browser.png)
